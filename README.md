@@ -7,15 +7,23 @@ This test suite leverages Microsoft's Playwright automation framework, and is bu
 
 This test suite aims to encapsulate basic methods of functional and non-functional testing. On the Web UI side, the search functionality and navigation of the website will be tested. This suite also employs Playwright's performance testing API to measure the website's responsiveness under load. 
 
+You can clone the repository and install the requirements using `pip install -r requirements.txt`.
+
 🟡 IN PROGRESS 🟡
 
-Site navigation and Performance API 
+- Site navigation and Performance API 
 
 🔴 KNOWN ISSUES 🔴
 
-Issues will be tracked in the Issues tab on the repository as well.
+- Issues will be tracked in the Issues tab on the repository as well.
 There's a timing problem somewhere when running the search test. Using the command `--slowmo 1000` seems to alleviate this for now. A standard command that works right now is: 
 
-`python3 -m pytest tests --headed --slowmo 1000`
+- `python3 -m pytest tests --headed --slowmo 1000`
+
+🔵 OPTIMIZATIONS 🔵
+
+- The search test could be parametrized instead of iterating over the keywords passed in from the JSON config file.
+
+- Search test currently checks for results based on a questionable selector - the site only displays results matching the keyword anyway, but for good practice this should be updated to match to the keyword. 
 
 

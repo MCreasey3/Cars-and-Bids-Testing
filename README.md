@@ -11,7 +11,7 @@ You can clone the repository and install the requirements using `pip install -r 
 
 🟡 IN PROGRESS 🟡
 
-- Site navigation and Performance API 
+- Performance API testing
 
 🔴 KNOWN ISSUES 🔴
 
@@ -19,6 +19,8 @@ You can clone the repository and install the requirements using `pip install -r 
 There's a timing problem somewhere when running the search test. Using the command `--slowmo 1000` seems to alleviate this for now. A standard command that works right now is: 
 
 - `python3 -m pytest tests --headed --slowmo 1000`
+
+- This bug also occurs when running tests on parallel threads > 2. I suspect they're related somehow. 
 
 🔵 OPTIMIZATIONS 🔵
 

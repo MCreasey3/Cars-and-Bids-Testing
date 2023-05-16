@@ -3,7 +3,7 @@
 
 ---Simple test suite for web UI and performance testing on Cars and Bids (carsandbids.com)--- 
 
-This test suite leverages Microsoft's Playwright automation framework, and is built in the Python version running with Pytest. Documentation for can be found here: https://playwright.dev/python/
+This test suite leverages Microsoft's Playwright automation framework, and is built in the Python version running with Pytest. Documentation for Playwright can be found here: https://playwright.dev/python/
 
 This test suite aims to encapsulate basic methods of functional and non-functional testing. On the Web UI side, the search functionality and navigation of the website will be tested. This suite also employs Playwright's performance testing API to measure the website's responsiveness under load. 
 

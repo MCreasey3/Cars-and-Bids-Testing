@@ -3,9 +3,9 @@ import pytest
 
 from pages.result import CarsBidsResultPage
 from pages.home import CarsBidsHomePage
-# from pages.lowest import CarsBidsLowestPage
-# from pages.closest import CarsBidsClosest
-# from pages.noreserve import CarsBidsNoReservePage
+from pages.lowest import CarsBidsLowestPage
+from pages.closest import CarsBidsClosestPage
+from pages.noreserve import CarsBidsNoReservePage
 from playwright.sync_api import Page
 
 
@@ -24,10 +24,16 @@ def result_page(page: Page) -> CarsBidsResultPage:
 def home_page(page: Page) -> CarsBidsHomePage:
     return CarsBidsHomePage(page)
 
-'''
 @pytest.fixture
 def lowest_page(page: Page) -> CarsBidsLowestPage:
     return CarsBidsLowestPage(page)
 
 
-'''
+@pytest.fixture
+def closest_page(page: Page) -> CarsBidsClosestPage:
+    return CarsBidsClosestPage(page)
+
+
+@pytest.fixture
+def noreserve_page(page: Page) -> CarsBidsNoReservePage:
+    return CarsBidsNoReservePage

@@ -25,6 +25,27 @@ class CarsBidsHomePage:
         self.search_input.fill(keyword)
         self.search_input.press("Enter")
         #self.page.wait_for_navigation()
+    
+
+    def navigate_closest_page(CarsBidsHomePage):
+        # Load home page first
+        CarsBidsHomePage.load()
+        # Click link for 'Closest to Me' page
+        CarsBidsHomePage.page.click('a[href="/?sort=closest"]')
+
+    
+    def navigate_lowest_page(CarsBidsHomePage):
+        # Load home page first
+        CarsBidsHomePage.load()
+        # Click link for 'Lowest Mileage' page
+        CarsBidsHomePage.page.click('a[href="/?sort=lowest_mileage"]')
+
+    
+    def navigate_noreserve_page(CarsBidsHomePage):
+        # Load home page first
+        CarsBidsHomePage.load()
+        # Click link for 'No Reserve' page
+        CarsBidsHomePage.page.click('a[href="/?sort=no_reserve"]')
         
 
 

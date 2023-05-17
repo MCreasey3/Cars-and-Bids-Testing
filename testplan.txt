@@ -1,0 +1,9 @@
+This test suite aims to investigate several functions of the Cars and Bids website, an online auction service for automobiles from the 1980s to the 2020s. Both functional and non-functional tests will be performed to evaluate the website's UI and performance. 
+
+FUNCTIONAL TESTS 
+Search: The landing page of Cars and Bids provides a search bar, for users to directly look for auction listings that they might be interested in. The search tests in this suite aim to verify that the search bar can accurately receive user input and display relevant results on the following page after pressing 'Enter'. 
+
+Navigation: Several links exist on the landing page, with the purpose of allowing users to view auction listings that fall under certain categories. For the purposes of this test suite, we will investigate the 'Lowest Mileage' link, the 'Closest to Me' link, and the 'No Reserve' option. To verify that these work correctly, the tests will click the links, and assert that the title of the following page relates to the keywords of each of the three options. 
+
+NON-FUNCTIONAL TESTS
+Performance: This suite will investigate load times of page elements leveraging the Resource Timing component of the Performance API. 

@@ -27,4 +27,4 @@ You can clone the repository and install the requirements using `pip install -r 
 
 - Search test currently checks for results based on a questionable selector - the site only displays results matching the keyword anyway, but for good practice this should be updated to match to the keyword.
 
-- More links can be tested for nvaigation purposes, and not just the three provided.
+- More links can be tested for navigation purposes, and not just the three provided.
